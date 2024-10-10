@@ -87,6 +87,7 @@ h1.heading > i {
   overflow-y: auto;
   padding-bottom: 6rem;
   margin-top: 6rem;
+  scrollbar-width: none;
 }
 .tracks::-webkit-scrollbar {
   display: none;
