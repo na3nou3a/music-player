@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Signika+Negative:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- custom styles -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>MP3 Music Player</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="music-player">
+        <h1 class="heading">audio player <i class="fa-solid fa-headphones"></i></h1>
+
+        <div class="tracks">
+          <!-- add tracks with js here -->
+        </div>
+        <div class="audio-player">
+          <audio id="audio" src=""></audio>
+          <img class="music-img" src="" alt="album cover" />
+          <p class="track-name"></p>
+          <p class="track-artist"></p>
+          <button type="button" class="btn up-btn">
+            <i class="fa-solid fa-chevron-up" aria-hidden="true"></i>
+          </button>
+          <button type="button" class="btn close-btn" aria-label="close audio">
+            <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+          </button>
+          <div class="bars" aria-hidden="true">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+        </div>
+        <div class="popup-music-player">
+          <div class="top-section">
+            <button type="button" class="btn like-btn" aria-label="like">
+              <i class="fa-solid fa-heart" aria-hidden="true"></i>
+            </button>
+            <h2 class="heading">now playing</h2>
+            <button type="button" class="btn down-btn" aria-label="show playlist">
+              <i class="fa-solid fa-music" aria-hidden="true"></i>
+            </button>
+          </div>
+          <div class="track-details">
+            <img class="music-img" src="" alt="album cover" />
+            <p class="track-name"></p>
+            <p class="track-artist"></p>
+            <div class="controlls">
+              <div class="progress-container">
+                <div class="progress-bar"></div>
+              </div>
+              <div class="durations">
+                <p id="current-duration"></p>
+                <p class="track-length"></p>
+              </div>
+              <div class="btn-groupe">
+                <button type="button" class="btn shuffle-btn" aria-label="shuffle playlist">
+                  <i class="fa-solid fa-shuffle" aria-hidden="true"></i>
+                </button>
+                <button type="button" class="btn backward-btn" aria-label="play backward track">
+                  <i class="fa-solid fa-backward" aria-hidden="true"></i>
+                </button>
+                <button type="button" class="btn play-pause-btn" aria-label="play pause track">
+                  <i class="fa-solid fa-play" aria-hidden="true"></i>
+                </button>
+                <button type="button" class="btn forward-btn" aria-label="play next track">
+                  <i class="fa-solid fa-forward" aria-hidden="true"></i>
+                </button>
+                <button type="button" class="btn repeat-btn" aria-label="play in loop">
+                  <i class="fa-solid fa-repeat" aria-hidden="true"></i>
+                </button>
+              </div>
+              <div class="volume">
+                <button type="button" class="btn volume-btn" aria-label="toggle volume">
+                  <i class="fa-solid fa-volume-high" aria-hidden="true"></i>
+                </button>
+                <input
+                  type="range"
+                  min="0"
+                  max="100"
+                  value="30"
+                  class="volume-slider"
+                  id="volume-slider"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="js/script.js"></script>
+  </body>
+</html>
